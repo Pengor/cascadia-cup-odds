@@ -4,9 +4,9 @@ class Main {
 		Game game1 = new Game("Vancouver", "Seattle",   0.0000, 0.0000);
 		Game game2 = new Game("Vancouver", "Portland",  1.0000, 0.0000);
 		Game game3 = new Game("Seattle",   "Vancouver", 1.0000, 0.0000);
-		Game game4 = new Game("Seattle",   "Portland",  0.5162, 0.2514);
-		Game game5 = new Game("Portland",  "Vancouver", 0.6922, 0.1264);
-		Game game6 = new Game("Portland",  "Seattle",   0.5204, 0.2480);
+		Game game4 = new Game("Seattle",   "Portland",  0.0000, 1.0000);
+		Game game5 = new Game("Portland",  "Vancouver", 0.7759, 0.0780);
+		Game game6 = new Game("Portland",  "Seattle",   0.5365, 0.2371);
 
 		int scenarioNum = 1;
 		int vanPoints, seaPoints, porPoints;
