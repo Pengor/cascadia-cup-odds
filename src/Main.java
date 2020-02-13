@@ -1,12 +1,12 @@
 class Main {
 	public static void main(String[] args) {
 
-		Game game1 = new Game("Vancouver", "Seattle",   0.0000, 0.0000);
-		Game game2 = new Game("Vancouver", "Portland",  1.0000, 0.0000);
-		Game game3 = new Game("Seattle",   "Vancouver", 1.0000, 0.0000);
-		Game game4 = new Game("Seattle",   "Portland",  0.0000, 1.0000);
-		Game game5 = new Game("Portland",  "Vancouver", 0.7759, 0.0780);
-		Game game6 = new Game("Portland",  "Seattle",   0.5365, 0.2371);
+		Game game1 = new Game("Seattle",   "Vancouver", 0.7639, 0.0795);
+		Game game2 = new Game("Portland",  "Vancouver", 0.7236, 0.1087);
+		Game game3 = new Game("Portland",  "Seattle",   0.4978, 0.2752);
+		Game game4 = new Game("Vancouver", "Seattle",   0.3132, 0.4473);
+		Game game5 = new Game("Seattle",   "Portland",  0.5453, 0.2354);
+		Game game6 = new Game("Vancouver", "Portland",  0.3310, 0.4370);
 
 		int scenarioNum = 1;
 		int vanPoints, seaPoints, porPoints;
@@ -22,18 +22,18 @@ class Main {
 					for (int d = 0; d < 3; d++) {
 						for (int e = 0; e < 3; e++) {
 							for (int f = 0; f < 3; f++) {
-								vanPoints  = game1.homePoints(a);
-								seaPoints  = game1.awayPoints(a);
-								vanPoints += game2.homePoints(b);
-								porPoints  = game2.awayPoints(b);
-								seaPoints += game3.homePoints(c);
-								vanPoints += game3.awayPoints(c);
-								seaPoints += game4.homePoints(d);
-								porPoints += game4.awayPoints(d);
-								porPoints += game5.homePoints(e);
-								vanPoints += game5.awayPoints(e);
-								porPoints += game6.homePoints(f);
-								seaPoints += game6.awayPoints(f);
+								seaPoints  = game1.homePoints(a);
+								vanPoints  = game1.awayPoints(a);
+								porPoints  = game2.homePoints(b);
+								vanPoints += game2.awayPoints(b);
+								porPoints += game3.homePoints(c);
+								seaPoints += game3.awayPoints(c);
+								vanPoints += game4.homePoints(d);
+								seaPoints += game4.awayPoints(d);
+								seaPoints += game5.homePoints(e);
+								porPoints += game5.awayPoints(e);
+								vanPoints += game6.homePoints(f);
+								porPoints += game6.awayPoints(f);
 
 								scenarioOdds  = game1.getOdds(a);
 								scenarioOdds *= game2.getOdds(b);
