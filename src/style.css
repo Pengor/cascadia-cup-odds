@@ -1,0 +1,33 @@
+body {
+	background-color: #63908E;
+}
+
+h1 {
+	color: #F0EDA4;
+	text-align: center;
+	font-size: 5vw;
+	font-family: Verdana;
+}
+
+h2 {
+	color: #F0EDA4;
+	text-align: center;
+	font-size: 3vw;
+	font-family: Verdana;
+}
+.team {
+	color: #F0EDA4;
+	text-align: center;
+	font-family:Monospace;
+}
+#licensing {
+	color: #F0EDA4;
+	text-align: center;
+	font-size: 1.2vw;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
