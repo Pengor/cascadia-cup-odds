@@ -1,4 +1,3 @@
-
 function calcOdds() {
 
 	var t1 = document.getElementById('t1');
@@ -14,7 +13,7 @@ function calcOdds() {
 		header: true,
 		complete: function(results) {
 			for (const x of results.data) {
-				if (x.season === "2022") {
+				if (x.season === "2023") {
 					if (
 					(x.team1 == "Vancouver Whitecaps" || x.team1 == "Seattle Sounders FC" || x.team1 == "Portland Timbers") 
 					&&
@@ -43,43 +42,58 @@ function calcOdds() {
 						for (var d of outcomes) {
 							for (var e of outcomes) {
 								for (var f of outcomes) {
+									for (var g of outcomes) {
+										for (var h of outcomes) {
+											for (var i of outcomes) {
 
-									var van_pts = 0;
-									var sea_pts = 0;
-									var por_pts = 0;
+												var van_pts = 0;
+												var sea_pts = 0;
+												var por_pts = 0;
 
-									van_pts += homePoints(a);
-									por_pts += awayPoints(a);
-									sea_pts += homePoints(b);
-									van_pts += awayPoints(b);
-									sea_pts += homePoints(c);
-									por_pts += awayPoints(c);
-									por_pts += homePoints(d);
-									van_pts += awayPoints(d);
-									por_pts += homePoints(e);
-									sea_pts += awayPoints(e);
-									van_pts += homePoints(f);
-									sea_pts += awayPoints(f);
+												van_pts += homePoints(a);
+												por_pts += awayPoints(a);
+												por_pts += homePoints(b);
+												sea_pts += awayPoints(b);
+												por_pts += homePoints(c);
+												van_pts += awayPoints(c);
+												van_pts += homePoints(d);
+												sea_pts += awayPoints(d);
+												sea_pts += homePoints(e);
+												por_pts += awayPoints(e);
+												van_pts += homePoints(f);
+												sea_pts += awayPoints(f);
+												por_pts += homePoints(g);
+												van_pts += awayPoints(g);
+												sea_pts += homePoints(h);
+												por_pts += awayPoints(h);
+												sea_pts += homePoints(i);
+												van_pts += awayPoints(i);
 
-									console.log(van_pts);
-									console.log(sea_pts);
-									console.log(por_pts);
+												console.log(van_pts);
+												console.log(sea_pts);
+												console.log(por_pts);
 
-									scenario_odds  = getOdds(matches[0], a);
-									scenario_odds *= getOdds(matches[1], b);
-									scenario_odds *= getOdds(matches[2], c);
-									scenario_odds *= getOdds(matches[3], d);
-									scenario_odds *= getOdds(matches[4], e);
-									scenario_odds *= getOdds(matches[5], f);
+												scenario_odds  = getOdds(matches[0], a);
+												scenario_odds *= getOdds(matches[1], b);
+												scenario_odds *= getOdds(matches[2], c);
+												scenario_odds *= getOdds(matches[3], d);
+												scenario_odds *= getOdds(matches[4], e);
+												scenario_odds *= getOdds(matches[5], f);
+												scenario_odds *= getOdds(matches[5], g);
+												scenario_odds *= getOdds(matches[5], h);
+												scenario_odds *= getOdds(matches[5], i);
 
-									if (van_pts > sea_pts && van_pts > por_pts)
-										van_odds += scenario_odds * 100;
-									else if (sea_pts > van_pts && sea_pts > por_pts)
-										sea_odds += scenario_odds * 100;
-									else if (por_pts > van_pts && por_pts > sea_pts)
-										por_odds += scenario_odds * 100;
-									else
-										tie_odds += scenario_odds * 100;
+												if (van_pts > sea_pts && van_pts > por_pts)
+													van_odds += scenario_odds * 100;
+												else if (sea_pts > van_pts && sea_pts > por_pts)
+													sea_odds += scenario_odds * 100;
+												else if (por_pts > van_pts && por_pts > sea_pts)
+													por_odds += scenario_odds * 100;
+												else
+													tie_odds += scenario_odds * 100;
+											}
+										}
+									}
 								}
 							}
 						}
