@@ -79,9 +79,9 @@ function calcOdds() {
 												scenario_odds *= getOdds(matches[3], d);
 												scenario_odds *= getOdds(matches[4], e);
 												scenario_odds *= getOdds(matches[5], f);
-												scenario_odds *= getOdds(matches[5], g);
-												scenario_odds *= getOdds(matches[5], h);
-												scenario_odds *= getOdds(matches[5], i);
+												scenario_odds *= getOdds(matches[6], g);
+												scenario_odds *= getOdds(matches[7], h);
+												scenario_odds *= getOdds(matches[8], i);
 
 												if (van_pts > sea_pts && van_pts > por_pts)
 													van_odds += scenario_odds * 100;
