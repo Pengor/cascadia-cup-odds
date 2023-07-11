@@ -1,3 +1,5 @@
+# ⚠️ This tool is currently broken due to FiveThirtyEight ceasing publication of their soccer statistics ⚠️
+
 # Cascadia Cup Odds Calculator
 This calculates who is most likely to win the Cascadia Cup this year given current match outcome data provided by [FiveThirtyEight](https://fivethirtyeight.com).
 
